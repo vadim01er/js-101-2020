@@ -20,7 +20,7 @@ export const ActionsBar = (props: {
   return (
     <section className="todo-app__actions-bar actions-bar">
       <div className="actions-bar__item">
-        <div className="task-counter js-todo-items-left-counter">
+        <div data-test-id="task-counter" className="task-counter js-todo-items-left-counter">
           {`${leftCount} item${leftCount !== 1 ? 's' : ''} left`}
         </div>
       </div>
